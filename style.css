@@ -199,3 +199,15 @@ input {
   margin-bottom: 3px;
   margin-right: 10px;
 }
+.submit-button {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 18px;
+  background-color: #d4e8d5;
+  border: solid 1px black;
+  color: black;
+  font-size: 18px;
+  font-weight:300;
+}
