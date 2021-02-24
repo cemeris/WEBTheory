@@ -1,3 +1,8 @@
+<?php
+include "../code/components/header.php";
+include "../code/components/head.php";
+?>
+
 <title>Jautājumu sadaļa</title>
 <div class="container">
   <div class="left-side-main">
