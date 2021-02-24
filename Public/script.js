@@ -1,3 +1,4 @@
+
 navButton = document
   .getElementById(`collapse`)
   .addEventListener(`click`, function () {
