@@ -36,6 +36,13 @@ body {
   padding: 20px;
 }
 
+.navbar-center {
+  flex: 0 1 150px;
+  text-align: center;
+}
+.mobnav-right {
+  display: none;
+}
 .navbar-right,
 .nav-title,
 .nav-counter,
@@ -104,11 +111,31 @@ ul,
   border-left: 5px solid #34c5ce;
 }
 
+@media only screen and (max-width: 480px) {
+  .mobnav-right {
+    position: relative;
+    top: 6px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .mobnav-right span {
+    padding: 0 5px;
+  }
+  #dropdown {
+    width: 100%;
+  }
+  #cover,
+  .nav-counter,
+  .nav-time {
+    display: none;
+  }
+}
+
 .container {
   display: flex;
 }
 
-.left-side-main {  
+.left-side-main {
   width: 50%;
 }
 
@@ -132,43 +159,98 @@ ul,
   align-items: center;
   text-align: center;
 }
-
 .right-side-main-form {
-  height: 100%;
+  height: 180%;
 }
-
-.answer-inner-div-first {
-  height: 50%;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;  
-}
-
-.answer-inner-div-first div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;
-  border: 1px solid lightgreen;
-  padding: 5px;
-  height: 50px;
-  width: 200px;
-}
-
-.answer-inner-div-second {
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .submit-button {
-  height: 50px;
+  position: relative;
+  display: block;
   width: 200px;
+  height: 50px;
+  border-radius: 18px;
+  background-color: #d4e8d5;
+  border: solid 1px black;
+  color: black;
+  font-size: 18px;
+  font-weight:300px;
 }
-
-input {
-  margin-bottom: 3px;
-  margin-right: 10px;
+.answer-inner-div-second {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Answers blok */
+.right-side-main {
+  padding: 100px;
+  background: #e5e5e5;
+  border-radius: 20px;
+  margin-left:200px;
+}
+:root {
+  --primary: #C5E1A5;
+  --easing: cubic-bezier(0.165, 0.84, 0.44, 1);
+  --duration: 100ms;
+}
+.checkbox {
+  display: inline-block;
+  position: relative;
+  padding: 20px 0 20px 60px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.text {
+  display: inline-block;
+  transition: transform var(--duration) var(--easing);
+  user-select: none;
+}
+.checkbox:active .text {
+  transform: scale(1.1); 
+}
+.checkbox  .icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
+}
+.checkbox .icon::before,
+.checkbox .icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.checkbox .icon::before {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  border: 2px solid currentColor;
+  background: transparent;
+  transition:var(--duration) var(--easing);
+}
+.checkbox .icon::after {
+  border: 3px solid transparent;
+  transition: height var(--duration) ease-in, 
+  width var(--duration) ease-out var(--duration), 
+  border-color var(--easing) var(--duration) var(--duration);
+  width: 0px;
+  height: 0px;
+  bottom: 7px;
+  left: 12px;
+  border-radius: 4px;
+  transform-origin: bottom left;
+}
+[type=radio]:checked + .checkbox .icon::after {
+  width: 8px;
+  height: 20px;
+  border-right-color: currentColor;
+  border-bottom-color: currentColor;
+  transition: width var(--duration) ease-in, 
+  height var(--duration) ease-out var(--duration), 
+  border-color var(--easing) var(--duration);
+}
+[type=radio]:checked + .checkbox .icon::before {
+  background: var(--primary);
 }
