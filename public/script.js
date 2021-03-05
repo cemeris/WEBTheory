@@ -9,9 +9,10 @@ document.querySelectorAll("#navBtn, #cover").forEach((e) => {
 });
 
 // (Reinis) iesniegt Atbildi poga:
-document
-  .querySelector(".right-side-main-form")
-  .addEventListener("submit", function (event) {
+let side_form = document.querySelector(".right-side-main-form");
+
+if (side_form) {
+side_form.addEventListener("submit", function (event) {
     // event.preventDefault();
     let question = document.getElementById("questionText").innerText;
     let answer = this.querySelector("input[name = answer]:checked").value;
@@ -20,3 +21,11 @@ document
     localStorage.setItem(question, answer);
     console.log(question, answer); /* var izdzēst pēc testēšanas */
   });
+}
+
+let navButton = document.getElementById(`collapse`)
+if (navButton) {
+  navButton.addEventListener(`click`, function () {
+    document.getElementById(`collapse1`).classList.toggle("hidden");
+  });
+}
