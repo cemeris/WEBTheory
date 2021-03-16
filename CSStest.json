@@ -1,0 +1,56 @@
+[
+  {
+    "Jautājums": "Kas ir CSS?",
+    "Bilde": "",
+    "Pareizā atbilde": "Kods, kas stilizē web lapas izskatu",
+    "nepareizā 1": "Programmēšanas valoda",
+    "nepareizā 2": "Populārs IT uzņēmums",
+    "nepareizā 4": "Web programmēšanas kursi",
+    "Paskaidrojums": "CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once"
+  },
+  {
+    "Jautājums": "CSS manipulē ar:",
+    "Bilde": "",
+    "Pareizā atbilde": "HTML elementiem",
+    "nepareizā 1": "Javascript kodu",
+    "nepareizā 2": "PHP kodu",
+    "nepareizā 4": "MySQL kodu",
+    "Paskaidrojums": ""
+  },
+  {
+    "Jautājums": "Kādi ir 3 CSS tipi?",
+    "Bilde": "",
+    "Pareizā atbilde": "Inline, Internal un External",
+    "nepareizā 1": "HTML, Javascript un PHP",
+    "nepareizā 2": "Statisks, dinamisks un maināms",
+    "nepareizā 4": "",
+    "Paskaidrojums": ""
+  },
+  {
+    "Jautājums": "Kurš piemērs norāda uz External CSS tipu?",
+    "Bilde": "",
+    "Pareizā atbilde": "<link rel='stylesheet' href='style.css' />",
+    "nepareizā 1": "<style>body {background-color: linen;}</style>",
+    "nepareizā 2": "<p style='color:red;'>This is a paragraph.</p>",
+    "nepareizā 4": "",
+    "Paskaidrojums": ""
+  },
+  {
+    "Jautājums": "Kurš no šiem ir CSS Selctor",
+    "Bilde": "",
+    "Pareizā atbilde": "h1 {}",
+    "nepareizā 1": "Background-color:",
+    "nepareizā 2": "120px;",
+    "nepareizā 4": "",
+    "Paskaidrojums": ""
+  },
+  {
+    "Jautājums": "CSS Declaration sastāv no",
+    "Bilde": "",
+    "Pareizā atbilde": "Property and Value",
+    "nepareizā 1": "Selector and {}",
+    "nepareizā 2": "Name and Size",
+    "nepareizā 4": "Link and document",
+    "Paskaidrojums": ""
+  }
+]
