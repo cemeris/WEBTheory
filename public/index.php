@@ -3,12 +3,18 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-session_start();
+$page_path = '../code/pages/';
 
 if (isset($_GET['page'])) {
-    if ($_GET['page'] === "questions") {
-        include "../code/pages/questions.php";
+    switch ($_GET['page']) {
+        case 'questions':
+            $page_path .= "questions.php";
+            break;
     }
 }
+else {
+    $page_path .= "main.php";
+}
+include $page_path;
 
 ?>
