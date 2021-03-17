@@ -1,0 +1,9 @@
+{
+    "db_username": "root",
+    "db_password": "root",
+    "db_name": "webtheory",
+    "db_host": "localhost",
+    "site_url": "{{your-site-url}}",
+    "debug_mode": true,
+    "install_timestamp": 1615978238
+}
