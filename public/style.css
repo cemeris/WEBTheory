@@ -206,7 +206,7 @@ ul,
   user-select: none;
 }
 .checkbox:active .text {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 .checkbox  .icon {
   position: absolute;
@@ -232,8 +232,8 @@ ul,
 }
 .checkbox .icon::after {
   border: 3px solid transparent;
-  transition: height var(--duration) ease-in, 
-  width var(--duration) ease-out var(--duration), 
+  transition: height var(--duration) ease-in,
+  width var(--duration) ease-out var(--duration),
   border-color var(--easing) var(--duration) var(--duration);
   width: 0px;
   height: 0px;
@@ -247,10 +247,35 @@ ul,
   height: 20px;
   border-right-color: currentColor;
   border-bottom-color: currentColor;
-  transition: width var(--duration) ease-in, 
-  height var(--duration) ease-out var(--duration), 
+  transition: width var(--duration) ease-in,
+  height var(--duration) ease-out var(--duration),
   border-color var(--easing) var(--duration);
 }
 [type=radio]:checked + .checkbox .icon::before {
   background: var(--primary);
+}
+
+.conatiner-middle {
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 50px auto;
+  padding: 30px;
+  width: 500px;
+}
+.conatiner-middle form {
+  margin: 0;
+}
+.conatiner-middle input,
+.conatiner-middle label {
+  height: 2.4em;
+  line-height: 2.4em;
+}
+.conatiner-middle div {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 12px;
+}
+.conatiner-middle hr {
+  margin: 30px 0 15px;
 }
